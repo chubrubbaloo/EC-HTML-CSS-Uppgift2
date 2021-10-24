@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: red;
+    padding: 10px;
+    height: 20vh;
+    display: flex;
+    width: 100%;
+}
+
+.text-wrapper {
+    border: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.left {
+    margin-left: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navbar-image {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.right {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.right ul,
+li,
+a {
+    margin: 15px;
+    font-size: larger;
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    box-shadow: 0 5px white;
+    transform: translateY(4px);
+}
+
+.main-page-image {
+    float: left;
+    margin: 20px;
+    height: 80vh;
+    width: 60%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-text {
+    margin: 10px 20px 10px 20px;
+    height: 60vh;
+    padding: 5px;
+    overflow: hidden;
+}
+
+button {
+    z-index: 999;
+    font-weight: bolder;
+    font-size: x-large;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10vh;
+    width: 15%;
+    background-color: red;
+    color: white;
+}
+
+button:active {
+    box-shadow: 0 5px #333;
+    transform: translateY(4px);
+}
+
+@media (max-width: 800px) {
+    h1,
+    p,
+    button {
+        display: none;
+    }
+}
+
+@media (max-width: 1550px) {
+    .right {
+        display: none;
+    }
+}
